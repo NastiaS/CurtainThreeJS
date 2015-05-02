@@ -189,8 +189,8 @@
 
                 // cloth material
                 THREE.ImageUtils.crossOrigin = '';
-                var clothTexture = THREE.ImageUtils.loadTexture( 'http://sdg.repositoryhosting.com/git_public/sdg/sdg-blog.git/blob_plain/abced5687967687c3e429ddd18a38055d0439550:/Three-js-examples/images/clouds.jpg?js=1' );
-                clothTexture.wrapS = clothTexture.wrapT = THREE.RepeatWrapping;
+                var clothTexture = THREE.ImageUtils.loadTexture('coolCurtain.jpg');
+                clothTexture.wrapS = clothTexture.wrapT = THREE.ClampToEdgeWrapping;
                 clothTexture.anisotropy = 16;
 
                 var clothMaterial = new THREE.MeshPhongMaterial( { alphaTest: 0.5, color: 0xffffff, specular: 0x030303, emissive: 0x111111, shiness: 10, map: clothTexture, side: THREE.DoubleSide } );
@@ -232,8 +232,8 @@
 
                 // ground
 
-                var groundTexture = THREE.ImageUtils.loadTexture( "textures/terrain/grasslight-big.jpg" );
-                groundTexture.wrapS = groundTexture.wrapT = THREE.RepeatWrapping;
+                var groundTexture = THREE.ImageUtils.loadTexture( "ocean.png" );
+                groundTexture.wrapS = groundTexture.wrapT = THREE.ClampToEdgeWrapping;
                 groundTexture.repeat.set( 25, 25 );
                 groundTexture.anisotropy = 16;
                 

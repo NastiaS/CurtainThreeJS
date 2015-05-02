@@ -1,0 +1,24 @@
+{
+  "name": "CurtainThreeJS",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Cloth.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NastiaS/CurtainThreeJS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NastiaS/CurtainThreeJS/issues"
+  },
+  "homepage": "https://github.com/NastiaS/CurtainThreeJS",
+  "dependencies": {
+    "body-parser": "^1.12.3",
+    "express": "^4.12.3",
+    "morgan": "^1.5.2"
+  }
+}
